@@ -5,6 +5,9 @@ import pysam
 from collections import Counter
 from Bio.Seq import Seq
 import json
+import warnings
+warnings.filterwarnings("ignore")
+warnings.simplefilter("ignore")
 
 
 
