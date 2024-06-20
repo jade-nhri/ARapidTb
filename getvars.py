@@ -22,7 +22,7 @@ dvarna={'rrs': {'C-187T': ['amikacin', 'capreomycin', 'kanamycin', 'linezolid', 
 vard=dict()
 
 df=pd.read_table(invcf,names=['CHROM','POS','ID','REF','ALT','QUAL','FILTER','INFO','FORMAT','SAMPLE'],comment='#')
-print (df)
+#print (df)
 df.loc[(df['CHROM']=='gyrA') & (df['POS']==300) & (df['ALT']=='CC'),'ALT']='C'
 #print (df)
 
