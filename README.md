@@ -1,4 +1,4 @@
-# arapidtb
+# ARapidTb
 Targeted sputum sequencing for rapid and comprehensive drug resistance of Mycobacterium tuberculosis
 
 **To run with Docker**
