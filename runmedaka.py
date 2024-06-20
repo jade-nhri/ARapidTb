@@ -36,7 +36,7 @@ for i in sorted(myfiles):
         comm='medaka variant {2} {0}/medaka_{1}/consensus_probs.hdf {0}/variant_{1}.vcf'.format(outdir,name,ref)
         #print (comm)
         stdout=subprocess.getoutput(comm)
-        print (stdout)
+        #print (stdout)
 
         comm='getvars.py {0}/variant_{1}.vcf {2} {0}/medaka_{1}/calls_to_draft.bam'.format(outdir,name,ref)
         stdout=subprocess.getoutput(comm)
