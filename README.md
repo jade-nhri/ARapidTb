@@ -40,4 +40,4 @@ Quick start
 ------------
 ``funfilter.py indir /opt/ARapidTb/Tbrefs.fasta outdir``
 
-``preduct.py indir /opt/ARrapidTb/Tbrefs.fasta outdir``
+``predict.py indir /opt/ARrapidTb/Tbrefs.fasta outdir``
