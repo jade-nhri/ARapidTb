@@ -38,3 +38,5 @@ Installation
 
 Quick start
 ------------
+funfilter.py inputdir /opt/ARapidTb/Tbrefs.fasta outputdir
+preduct.py indir /opt/ARrapidTb/Tbrefs.fasta outputdir
