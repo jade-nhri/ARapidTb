@@ -35,3 +35,6 @@ Installation
 - [samtools-1.13](http://github.com/samtools/)
 - [bcftools](https://github.com/samtools/bcftools)
 - [seqkit-v2.8.0](https://github.com/shenwei356/seqkit)
+
+Quick start
+------------
