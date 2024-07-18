@@ -41,3 +41,6 @@ Quick start
 ``runfilter.py -i indir -r /opt/ARapidTb/Tbrefs.fasta -o outdir``
 
 ``predict.py -i indir -r /opt/ARrapidTb/Tbrefs.fasta -o outdir``
+
+## Usage
+- [readme](https://www.dropbox.com/scl/fi/fqtmu7yhfdfokya5mokzt/Manual-of-ARapidTb.pdf?rlkey=3k2h2zp0vsobyfqpe9w93ciy2&dl=0)
