@@ -38,6 +38,6 @@ Installation
 
 Quick start
 ------------
-``runfilter.py indir /opt/ARapidTb/Tbrefs.fasta outdir``
+``runfilter.py -i indir -r /opt/ARapidTb/Tbrefs.fasta -o outdir``
 
-``predict.py indir /opt/ARrapidTb/Tbrefs.fasta outdir``
+``predict.py -i indir -r /opt/ARrapidTb/Tbrefs.fasta -o outdir``
