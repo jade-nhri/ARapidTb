@@ -2,20 +2,39 @@
 import os,sys
 import subprocess
 import pandas as pd
+import argparse
 
-indir=os.path.abspath(sys.argv[1])
-ref=os.path.abspath(sys.argv[2])
-outdir=os.path.abspath(sys.argv[3])
+outpath='output'
+refpath='/opt/ARapidTb/Tbrefs.fasta'
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', help='the path to the filtered fastq folder')
+parser.add_argument('-r', help='the file path of target genes')
+parser.add_argument('-o', help='an output folder (dfault output)')
+
+args = parser.parse_args()
+
+argv=sys.argv
+if '-i' in argv:
+    inpath=os.path.abspath(argv[argv.index('-i')+1])
+if '-r' in argv:
+    refpath=os.path.abspath(argv[argv.index('-r')+1])
+if '-o' in argv:
+    outpath=os.path.abspath(argv[argv.index('-o')+1])
+
+indir=inpath
+ref=refpath
+outdir=outpath
 
 if not os.path.exists(outdir):
     os.mkdir(outdir)
 
-#cwd=os.getcwd()
-#print (cwd)
+cwd=os.getcwd()
+print (cwd)
 
 os.chdir(indir)
 myfiles=[x for x in os.listdir() if '_filtered' in x]
 #print (myfiles)
+os.chdir(cwd)
 
 for i in sorted(myfiles):
     name=i.replace('_filtered.fastq','')
