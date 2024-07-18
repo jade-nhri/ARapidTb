@@ -1,11 +1,31 @@
 #!/usr/bin/env python3
 import os,sys
 import subprocess
+import argparse
 
-indir=sys.argv[1]
-reffile=sys.argv[2]
-outdir=os.path.abspath(sys.argv[3])
+outpath='output'
+refpath='/opt/ARapidTb/Tbrefs.fasta'
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', help='the path to fastq folder')
+parser.add_argument('-r', help='the file path of target genes')
+parser.add_argument('-o', help='an output folder (dfault output)')
 
+args = parser.parse_args()
+
+argv=sys.argv
+if '-i' in argv:
+    inpath=os.path.abspath(argv[argv.index('-i')+1])
+if '-r' in argv:
+    refpath=os.path.abspath(argv[argv.index('-r')+1])
+if '-o' in argv:
+    outpath=os.path.abspath(argv[argv.index('-o')+1])
+
+indir=inpath
+reffile=refpath
+outdir=outpath
+if not os.path.exists(outdir):
+    os.mkdir(outdir)
+    
 cwd=os.getcwd()
 os.chdir(indir)
 
