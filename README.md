@@ -44,3 +44,5 @@ Quick start
 
 ## Usage
 - [readme](https://www.dropbox.com/scl/fi/fqtmu7yhfdfokya5mokzt/Manual-of-ARapidTb.pdf?rlkey=3k2h2zp0vsobyfqpe9w93ciy2&dl=0)
+- [Flongle nanopore sequencing data](https://doi.org/10.6084/m9.figshare.27048871.v1)
+- [MinION nanopore sequencing data](https://doi.org/10.6084/m9.figshare.27048820.v1)
