@@ -40,7 +40,12 @@ for m in range (0,5):
         #print (len(ycov))
 
         p=plt.subplot2grid((5,3),(m,n))
-        plt.ylim(0,200)
+        try:
+            yheight=math.ceil(max(ycov)/100)*100
+        except:
+            yheight=50
+
+        plt.ylim(0,yheight)
         plt.xlim(0,lengths[k])
         p.axes.xaxis.set_ticks([])
         plt.plot(xpos,ycov)
@@ -48,6 +53,8 @@ for m in range (0,5):
         k+=1
 
     
+f.text(0.5,0.06,'Position')
+f.text(0.06,0.45,'Depth',rotation='vertical')
 
 f.savefig(os.path.join(indir,'depth.pdf'))
 
